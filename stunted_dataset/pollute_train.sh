@@ -1,0 +1,9 @@
+python train.py 0.0
+python train.py 0.01
+python train.py 0.02
+python train.py 0.03
+python train.py 0.06
+python train.py 0.1
+python train.py 0.2
+python train.py 0.3
+python train.py 0.5
