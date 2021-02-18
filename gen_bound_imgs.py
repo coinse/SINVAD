@@ -27,7 +27,7 @@ classifier.eval()
 classifier.cuda()
 print("models loaded...")
 
-test_dataset = torchvision.datasets.FashionMNIST(root='./data', train=False, transform=transforms.ToTensor(), download=False)
+test_dataset = torchvision.datasets.MNIST(root='./data', train=False, transform=transforms.ToTensor(), download=False)
 test_data_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=1, shuffle=True)
 print("Data loader ready...")
 
@@ -54,7 +54,7 @@ for img_idx in trange(imgs_to_samp):
     prev_best = 999
     binom_sampler = torch.distributions.binomial.Binomial(probs=0.5*torch.ones(img_enc.size()))
 
-    ### gogo GA !!! ###
+    ### GA ###
     for g_idx in range(gen_num):
         indivs = torch.cat(now_pop, dim=0)
         dec_imgs = vae.decode(indivs).view(-1, 1, 28, 28)
