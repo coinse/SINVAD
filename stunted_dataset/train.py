@@ -18,8 +18,10 @@ num_epochs = 50
 batch_size = 128
 learning_rate = 2e-4
 norm_train = False
-stunt_ratio = float(sys.argv[1])
-expr_name = f'stunt_{stunt_ratio:.3f}'
+stunt_c1 = int(sys.argv[1])
+stunt_c2 = int(sys.argv[2])
+stunt_ratio = float(sys.argv[3])
+expr_name = f'stunt_{stunt_c1}{stunt_c2}_{stunt_ratio:.3f}'
 print(f'Experiment name: {expr_name}')
 
 # MNIST dataset

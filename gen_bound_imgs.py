@@ -89,7 +89,7 @@ for img_idx in trange(imgs_to_samp):
         now_pop = parent_pop + k_pop
         prev_best = now_best
         if mut_size < 1e-3:
-            break # that's enough and optim is slower than I expected
+            break # that's enough
         
 
     mod_best = parent_pop[-1].clone()
@@ -98,4 +98,4 @@ for img_idx in trange(imgs_to_samp):
     all_img_lst.append(final_bound_img)
 
 all_imgs = np.vstack(all_img_lst)
-np.save('bound_imgs_MNIST.npy', all_imgs)
+np.save('./data/bound_imgs_MNIST.npy', all_imgs)

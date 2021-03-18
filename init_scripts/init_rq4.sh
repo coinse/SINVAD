@@ -1,10 +1,8 @@
-if [ ! -e ../vae/models/MNIST_EnD.pth ];                                        
-then                                                                            
-    cd ../vae
-    mkdir -p models 
-    python train.py                                                             
-fi
-
-cd ../stunted_dataset
+cd ../sa
 mkdir -p models
-sh pollute_train.sh
+python svhn_train.py vgg
+python svhn_train.py mobile
+python svhn_train.py custom
+cd ../vae
+mkdir -p models
+python train_conv.py
