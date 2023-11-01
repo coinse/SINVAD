@@ -1,6 +1,6 @@
 # SINVAD
 
-This is a replication package for the ICSEW'20 paper [SINVAD: Search-based Image Space Navigation for DNN Image Classifier Test Input Generation](https://arxiv.org/abs/2005.09296).
+This is a replication package for the TOSEM paper [Deceiving Humans and Machines Alike: Test Input Generation for DNNs].
 
 ## Overview
 The `ipynb` files contain code for the experiments done in the SINVAD paper. 
