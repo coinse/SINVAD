@@ -1,5 +1,6 @@
 __pycache__
 .ipynb_checkpoints
 *.mat
-data/MNIST
+data/*MNIST
 vae/samples
+vae/models/*.pth
