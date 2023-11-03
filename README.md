@@ -24,5 +24,7 @@ where x is replaced with the desired RQ number.
 
 Alternatively, to train models for all the RQs, one can run the `all_init.sh` script in the same directory.
 
+For RQ4, you need to download the VAE models [from this link](doi.org/10.6084/m9.figshare.24482122) and place them in the `vae/models/` directory.
+
 ## Run
 Set up a Jupyter server and run the notebooks.
